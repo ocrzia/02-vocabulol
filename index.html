@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <title>Apprentissage de vocabulaire</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Vocabul🤭l</h1>
+    <p>L'app qui te permet de t'entraîner à retenir du vocabulaire</p>
+    <div class="add-words">
+      <h2>Ajoutez des mots</h2>
+
+      <div class="field">
+        <label for="from">Mot original</label>
+        <input type="text" class="from" id="from" placeholder="Entrez le mot original">
+      </div>
+      <div class="field">
+        <label for="to">Traduction</label>
+        <input type="text" class="to" id="to" placeholder="Entrez la traduction du mot">
+      </div>
+      <div class="error"></div>
+      <div class="howmuch"></div>
+      <div class="field dual-field">
+        <button class="send">Envoyer</button>
+        <button class="erase">Effacer la liste en cours</button>
+      </div>
+      <button class="send lets-go">Teste tes connaissances</button>
+    </div>
+    <div class="play">
+      <div class="close">X</div>
+      <h1>Traduis le mot <strong>magicien</strong></h1>
+      <div class="count"></div>
+      <div class="field">
+        <input type="text" class="proposition" id="prop" placeholder="Que proposes-tu ? :-)">
+      </div>
+      <button class="send">Proposer</button>
+      <div class="result"></div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

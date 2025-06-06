@@ -1,0 +1,134 @@
+::selection {
+  background:crimson;
+  color:#fff;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  padding:2rem;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 13px;
+}
+.wrapper {
+  max-width:1000px;
+  margin:0 auto;
+}
+.field {
+  margin-bottom: 10px;
+}
+.dual-field {
+  display: flex;
+  gap:10px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, button, select {
+  width: 100%;
+  padding:10px;
+  font-size: 14px;
+}
+button {
+  background:crimson;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  text-transform: uppercase;
+  @include transition;
+  border-radius:5px;
+  &:hover {
+    background:rgb(168, 15, 45);
+  }
+}
+.erase {
+  background:gray;
+  @include transition;
+  &:hover {
+    background:rgb(91, 91, 91);
+  }
+}
+.error {
+  color:crimson;
+  text-align: center;
+  margin-bottom: 10px;
+  min-height:20px;
+}
+.howmuch {
+  text-align: center;
+  margin-bottom: 15px;
+  min-height:20px;
+}
+.lets-go {
+  background:rebeccapurple;
+  display: none;
+  &:hover {
+    background:rgb(66, 33, 99);
+  }
+}
+.play {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background:#343434;
+  color:#fff;
+  padding:2rem;
+  translate:0 -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include transition;
+  h1 {
+    font-size: 25px;
+    strong {
+      color:greenyellow;
+    }
+  }
+  &.active {
+    translate:0;
+  }
+}
+.result {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  &.success {
+    color:yellowgreen;
+  }
+  &.error {
+    color:tomato;
+  }
+}
+.close {
+  position: absolute;
+  top:20px;
+  right:20px;
+  font-weight: bold;
+  cursor:pointer;
+  @include transition;
+  &:hover {
+    rotate:360deg;
+  }
+}
+.count {
+  text-align: center;
+  margin-bottom: 10px;
+}
